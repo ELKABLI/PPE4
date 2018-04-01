@@ -118,6 +118,7 @@ public class ClientArticles extends JFrame {
 		btnImpression.setBounds(18, 242, 115, 35);
 		btnImpression.setToolTipText("");
 		getContentPane().add(btnImpression);
+		
 		getContentPane().add(btnRetour);
 		getContentPane().add(txtTapezVotreRecherche);
 		getContentPane().add(btnRechercher);

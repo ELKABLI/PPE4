@@ -12,6 +12,7 @@ import java.awt.event.ActionEvent;
 import javax.swing.JLabel;
 //import javax.swing.ImageIcon;
 import java.awt.Font;
+import javax.swing.border.LineBorder;
 
 public class AdminMenu extends JFrame {
 
@@ -45,8 +46,9 @@ public class AdminMenu extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(600, 300, 600, 470);
 		contentPane = new JPanel();
+		contentPane.setForeground(Color.BLACK);
 		contentPane.setBackground(Color.WHITE);
-		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		contentPane.setBorder(new LineBorder(Color.BLUE, 5, true));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
@@ -92,10 +94,11 @@ public class AdminMenu extends JFrame {
 		btnStatisc.setBounds(412, 11, 162, 70);
 		contentPane.add(btnStatisc);
 		
+		/* piste d'amélioration de l'application
 		JButton btnGraph = new JButton("Graphique");
 		btnGraph.setForeground(Color.BLUE);
 		btnGraph.setBounds(412, 205, 162, 70);
-		contentPane.add(btnGraph);
+		contentPane.add(btnGraph);*/
 		
 		JButton btnGestionDesArticles = new JButton("Gestion des Articles");
 		btnGestionDesArticles.setFont(new Font("Tahoma", Font.PLAIN, 11));
