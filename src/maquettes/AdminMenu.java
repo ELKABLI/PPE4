@@ -6,6 +6,8 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import java.awt.Color;
+
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
@@ -113,8 +115,9 @@ public class AdminMenu extends JFrame {
 		contentPane.add(btnGestionDesArticles);
 		
 		JLabel label = new JLabel("");
-		//label.setIcon(new ImageIcon(AdminMenu.class.getResource("/ressource/img/logo.PNG")));
-		label.setBounds(77, 48, 456, 463);
+		label.setIcon(new ImageIcon(AdminMenu.class.getResource("/image/logo.png")));
+		label.setBounds(180, 10, 200, 400);
 		contentPane.add(label);
+		
 	}
 }
